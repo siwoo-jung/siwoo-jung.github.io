@@ -1,0 +1,14 @@
+siwoo:
+  name: Siwoo JUNG
+  title: Docusaurus maintainer
+  url: https://sebastienlorber.com
+  image_url: https://github.com/slorber.png
+  page: true
+    # customize the url of the author page at /blog/authors/<permalink>
+
+    # permalink: '/all-siwoo-jung-articles'
+  socials:
+    x: sebastienlorber
+    linkedin: sebastienlorber
+    github: slorber
+    newsletter: https://thisweekinreact.com
