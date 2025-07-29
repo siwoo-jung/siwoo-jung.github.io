@@ -9,13 +9,9 @@ order: 4
 <hr>
 
 - Technical Engineer @ [Enov8](https://www.enov8.com/).
-
 - Master's student in computer science at the Georgia Institute of Technology.
-
 - Open source contributor - [_microsoft-presidio_](https://github.com/microsoft/presidio)
-
-- Former process and project engineer, as well as a researcher in the hydrogen field.
-
+- Former process and project engineer, as well as a researcher in the hydrogen field.x
 - Actively transitioning into the technology industry, driven by passion and enthusiasm for the field.
 
 ## Work Experience
