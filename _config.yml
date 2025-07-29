@@ -127,7 +127,7 @@ comments:
     category_id: ${{secrets.GISCUS_CATEGORY_ID}}
     mapping: pathname
     strict: '0'
-    input_position: bottom
+    input_position: top
     lang: en
     reactions_enabled: '1'
 
