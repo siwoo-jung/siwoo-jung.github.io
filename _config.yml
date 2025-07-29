@@ -20,7 +20,7 @@ tagline: "<div style='padding-bottom: 10px; font-size: 0.8rem;'>Hello! 안녕하
  # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Blog about life as a student of Georgia Tech (OMSCS) and life in Sydney, Australia, as well as technical stuff.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -60,9 +60,9 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: ${{secrets.GOOGLE_ANALYTICS_ID}} # fill in your Google Analytics ID
+    id: G-0T384HYGWC # fill in your Google Analytics ID
   goatcounter:
-    id: ${{secrets.GOATCOUNTER_ID}} # fill in your GoatCounter ID
+    id: siwoojung # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -122,9 +122,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: siwoo-jung/siwoo-jung.github.io
-    repo_id: ${{secrets.GISCUS_REPO_ID}}
+    repo_id: R_kgDOPUtpsw
     category: Announcements
-    category_id: ${{secrets.GISCUS_CATEGORY_ID}}
+    category_id: DIC_kwDOPUtps84Ctifg
     mapping: pathname
     strict: '0'
     input_position: top
