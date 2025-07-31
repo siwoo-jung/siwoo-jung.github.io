@@ -8,13 +8,23 @@
       const url = `https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/${encodeURIComponent(uri)}.json`;
 
       fetch(url)
-        .then((response) => response.json())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
         .then((data) => {
-          const count = data.count.replace(/\D/g, '');
-          pv.innerText = new Intl.NumberFormat().format(count);
+          if (data && data.count) {
+            const count = data.count.toString().replace(/\D/g, '');
+            pv.innerText = new Intl.NumberFormat().format(count);
+          } else {
+            pv.innerText = '0';
+          }
         })
         .catch((error) => {
-          pv.innerText = '1';
+          console.error('Error fetching GoatCounter pageviews:', error);
+          pv.innerText = '0';
         });
     }
   });
