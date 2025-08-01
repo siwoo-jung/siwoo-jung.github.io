@@ -1,7 +1,6 @@
 ---
 title: 비전공/무경력자의 조지아텍 OMSCS 도전기
 description: OMSCS란, 왜 OMSCS인지, OMSCS에 필요한 것들은 무엇인지에 대해 알아봅니다.
-author: siwoo
 date: 2025-07-29 01:22:00 +1000
 categories:
 tags:

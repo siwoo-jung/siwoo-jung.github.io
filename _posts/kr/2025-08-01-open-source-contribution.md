@@ -1,7 +1,6 @@
 ---
 title: 오픈소스 프로젝트에 기여하는 방법 - 초보자 가이드
 description: Microsoft 오픈소스 프로젝트에 기여하면서 겪은 시행착오들
-author: siwoo
 date: 2025-07-31 23:22:00 +1000
 categories:
 tags:

@@ -1,7 +1,6 @@
 ---
 title: How to Contribute to Open Source Projects - A Beginner's Guide
 description: My trials and errors in contributing to Microsoft's open source projects.
-author: siwoo
 date: 2025-07-31 23:22:00 +1000
 categories:
 tags:

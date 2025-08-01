@@ -22,6 +22,17 @@ tagline: "<div style='padding-bottom: 10px; font-size: 0.8rem;'>Hello! 안녕하
 description: >- # used by seo meta and the atom feed
   Blog about life as a student of Georgia Tech (OMSCS) and life in Sydney, Australia, as well as technical stuff.
 
+# SEO settings
+seo:
+  # Override the default author name for posts
+  author:
+    name: Siwoo Jung
+    twitter: # your Twitter username if you have one
+  # Default image for social sharing
+  image: "/assets/img/siwoo.jpeg"
+  # Default image alt text
+  image_alt: "Siwoo Jung - Technical Engineer and Georgia Tech Student"
+
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://siwoo-jung.github.io"
@@ -56,6 +67,15 @@ webmaster_verifications:
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
+
+# Sitemap settings
+sitemap:
+  # Change frequency for different types of pages
+  changefreq: weekly
+  # Priority for different types of pages
+  priority: 0.8
+  # Include lastmod in sitemap
+  lastmod: true
 
 # Web Analytics Settings
 analytics:
