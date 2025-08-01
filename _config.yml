@@ -76,6 +76,11 @@ sitemap:
   priority: 0.8
   # Include lastmod in sitemap
   lastmod: true
+  # Exclude certain paths from sitemap
+  exclude:
+    - "/404.html"
+    - "/feed.xml"
+    - "/sitemap.xml"
 
 # Web Analytics Settings
 analytics:
