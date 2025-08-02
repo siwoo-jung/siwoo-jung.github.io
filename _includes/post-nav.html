@@ -4,13 +4,39 @@
   {% assign previous = site.data.locales[include.lang].post.button.previous %}
   {% assign next = site.data.locales[include.lang].post.button.next %}
 
-  {% if page.previous.url %}
+  <!-- Filter posts by the same language as current post -->
+  {% assign same_lang_posts = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
+  
+  <!-- Find current post index in the filtered list -->
+  {% assign current_index = 0 %}
+  {% for post in same_lang_posts %}
+    {% if post.url == page.url %}
+      {% assign current_index = forloop.index0 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  
+  <!-- Get previous post (older post, higher index in reverse sorted array) -->
+  {% assign prev_post = nil %}
+  {% assign prev_index = current_index | plus: 1 %}
+  {% if prev_index < same_lang_posts.size %}
+    {% assign prev_post = same_lang_posts[prev_index] %}
+  {% endif %}
+  
+  <!-- Get next post (newer post, lower index in reverse sorted array) -->
+  {% assign next_post = nil %}
+  {% assign next_index = current_index | minus: 1 %}
+  {% if next_index >= 0 %}
+    {% assign next_post = same_lang_posts[next_index] %}
+  {% endif %}
+
+  {% if prev_post %}
     <a
-      href="{{ site.baseurl }}{{ page.previous.url }}"
+      href="{{ site.baseurl }}{{ prev_post.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ previous }}"
     >
-      <p>{{ page.previous.title }}</p>
+      <p>{{ prev_post.title }}</p>
     </a>
   {% else %}
     <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
@@ -18,13 +44,13 @@
     </div>
   {% endif %}
 
-  {% if page.next.url %}
+  {% if next_post %}
     <a
-      href="{{ site.baseurl }}{{page.next.url}}"
+      href="{{ site.baseurl }}{{ next_post.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ next }}"
     >
-      <p>{{ page.next.title }}</p>
+      <p>{{ next_post.title }}</p>
     </a>
   {% else %}
     <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
