@@ -62,7 +62,7 @@ _Good First Issue 라벨_
 
 오픈소스 프로젝트에 기여하는 것은 단순히 코드를 작성하는 것뿐만 아니라, 문서 개선, 버그 신고, 새로운 기능 제안으로도 기여할 수 있다. 하지만 오픈소스 기여는 보통 PR(pull request)을 만들고 main/master 브랜치에 머지(merge)될 때로 간주한다. 따라서 가장 중요한 지식은 **Pull Request**다.
 
-다음 글에서는 pull request를 올리는 단계별 가이드를 공유하겠다.
+이 [글](https://siwoo-jung.github.io/posts/how-to-create-a-pull-request-on-github-kr/)에서는 간단한 pull request를 만드는 단계별 가이드와 실습 튜토리얼을 확인해보자.
 
 ## 내가 기여한 것들
 
@@ -96,4 +96,4 @@ _소유자의 이슈_
 
 ## 결론
 
-이 가이드가 오픈소스 기여에 첫 발을 내딛는 데 도움이 되기를 바란다. 오픈소스 커뮤니티는 항상 새로운 기여자들을 환영하며, 당신의 독특한 관점과 기술이 전 세계의 프로젝트에 가치 있는 변화를 가져올 수 있다. 다음 글에서는 pull request를 올리는 단계별 가이드를 공유하겠다.
+이 가이드가 오픈소스 기여에 첫 발을 내딛는 데 도움이 되기를 바란다. 오픈소스 커뮤니티는 항상 새로운 기여자들을 환영하며, 당신의 독특한 관점과 기술이 전 세계의 프로젝트에 가치 있는 변화를 가져올 수 있다. 간단한 pull request를 만드는 단계별 가이드와 실습 튜토리얼은 이 [글](https://siwoo-jung.github.io/posts/how-to-create-a-pull-request-on-github-kr/)을 참고해보자.
