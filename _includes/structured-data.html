@@ -1,9 +1,9 @@
 <!-- Structured Data for SEO -->
 <script type="application/ld+json">
+{% if page.layout == 'post' %}
 {
   "@context": "https://schema.org",
-  "@type": "{% if page.layout == 'post' %}BlogPosting{% else %}WebSite{% endif %}",
-  {% if page.layout == 'post' %}
+  "@type": "BlogPosting",
   "headline": "{{ page.title | escape }}",
   "description": "{{ page.description | escape }}",
   "author": {
@@ -13,29 +13,33 @@
   },
   "publisher": {
     "@type": "Organization",
-    "name": "{{ site.title }}",
+    "name": "Siwoo Jung",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}{{ site.avatar }}"
+      "url": "{{ site.url }}/assets/img/siwoo.jpeg"
     }
   },
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  {% if page.last_modified_at %}
-  "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
-  {% endif %}
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ page.url | absolute_url }}"
-  },
-  {% if page.image %}
+  }
+  {% if page.last_modified_at %},
+  "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}"
+  {% endif %}
+  {% if page.image %},
   "image": {
     "@type": "ImageObject",
     "url": "{{ page.image.path | absolute_url }}",
     "width": 1200,
     "height": 630
-  },
+  }
   {% endif %}
-  {% else %}
+}
+{% else %}
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
   "name": "{{ site.title }}",
   "description": "{{ site.description }}",
   "url": "{{ site.url }}",
@@ -44,6 +48,6 @@
     "target": "{{ site.url }}/search/?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
-  {% endif %}
 }
+{% endif %}
 </script> 
