@@ -202,42 +202,4 @@ script_includes:
     <!-- .post-tail-bottom -->
   </div>
   <!-- div.post-tail-wrapper -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const languageSelect = document.getElementById('language-select');
-      
-      if (languageSelect) {
-        languageSelect.addEventListener('change', function() {
-          redirectPage(this.value);
-        });
-      }
-
-      function redirectPage(selectedLang) {
-        const currentLang = '{{ page.lang | default: "en" }}';
-        const postSlug = '{{ page.title | slugify }}';
-        const baseUrl = '{{ site.baseurl }}';
-        
-        console.log('Current lang:', currentLang, 'Selected lang:', selectedLang);
-        
-        // If already on the selected language, do nothing
-        if (currentLang === selectedLang) {
-          console.log('Already on target language, no redirect needed');
-          return;
-        }
-        
-        let targetUrl;
-        if (selectedLang === 'kr') {
-          targetUrl = baseUrl + '/kr/' + postSlug + '/';
-        } else {
-          targetUrl = baseUrl + '/en/' + postSlug + '/';
-        }
-        
-        // Clean up any double slashes
-        targetUrl = targetUrl.replace(/\/+/g, '/');
-        
-        console.log('Redirecting to:', targetUrl);
-        window.location.href = targetUrl;
-      }
-    });
-  </script>
 </article>
