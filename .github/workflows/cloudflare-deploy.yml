@@ -1,0 +1,35 @@
+# name: Build and Deploy to Cloudflare Pages
+
+# on:
+#   push:
+#     branches:
+#       - main  # or your deployment branch
+#   workflow_dispatch:
+
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v3
+
+#     - name: Setup Ruby
+#       uses: ruby/setup-ruby@v1
+#       with:
+#         ruby-version: '3.3'
+#         bundler-cache: true
+
+#     - name: Install dependencies
+#       run: bundle install
+
+#     - name: Build Jekyll site
+#       run: bundle exec jekyll build
+
+#     - name: Deploy to Cloudflare Pages
+#       uses: cloudflare/pages-action@v1
+#       with:
+#         apiToken: ${{ secrets.CF_API_TOKEN }}
+#         accountId: YOUR_CLOUDFLARE_ACCOUNT_ID
+#         projectName: YOUR_CLOUDFLARE_PAGES_PROJECT_NAME
+#         directory: ./_site
