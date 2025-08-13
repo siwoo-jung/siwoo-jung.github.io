@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://siwoo-blog.pages.dev"
+url: https://siwoo-blog.pages.dev
 
 github:
   username: siwoo-jung # change to your GitHub username
@@ -75,7 +75,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: "goatcounter" # now only supports 'goatcounter'
+  provider: goatcounter # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
@@ -98,7 +98,7 @@ pageviews:
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/siwoo.jpeg"
+avatar: /assets/img/siwoo.jpeg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -124,10 +124,10 @@ comments:
     category: Announcements
     category_id: DIC_kwDOPUtps84Ctifg
     mapping: pathname # optional, default to 'pathname'
-    strict: '0' # optional, default to '0'
+    strict: 0 # optional, default to '0'
     input_position: top # optional, default to 'bottom'
     lang: en # optional, default to the value of `site.lang`
-    reactions_enabled: '1' # optional, default to the value of `1`
+    reactions_enabled: 1 # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
@@ -150,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl:
 
 # ------------ The following options are not recommended to be modified ------------------
 
