@@ -62,7 +62,7 @@ Although improving codebase would be considered meaningful from a job perspectiv
 
 Contributing to open source projects is not just about writing code, and you can contribute by improving documentation, reporting bugs or suggesting new features. However, an open source contribution is generally considered when you create a PR (pull request) and get it merged to the main/master branch. Therefore, the most important knowledge is **Pull Request**.
 
-This [post](https://siwoo-jung.github.io/posts/how-to-create-a-pull-request-on-github/) provides a step-by-step guide on how to create a simple pull request with a hands-on tutorial.
+This [post](https://siwoo-blog.pages.dev/posts/how-to-create-a-pull-request-on-github/) provides a step-by-step guide on how to create a simple pull request with a hands-on tutorial.
 
 ## What have I contributed
 
@@ -97,4 +97,4 @@ _Owner's issue_
 ## Conclusion
 
 I hope this guide helps you take your first steps into open source contribution. The open source community is always welcoming new contributors, and your unique perspective and skills could make a valuable difference to projects around the world. Refer to 
-this [post](https://siwoo-jung.github.io/posts/how-to-create-a-pull-request-on-github/) for a step-by-step guide on creating a simple pull request with a hands-on tutorial.
+this [post](https://siwoo-blog.pages.dev/posts/how-to-create-a-pull-request-on-github/) for a step-by-step guide on creating a simple pull request with a hands-on tutorial.

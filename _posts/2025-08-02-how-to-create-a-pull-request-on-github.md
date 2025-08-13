@@ -18,7 +18,7 @@ lang: en
 
 ---
 
-In my previous [post](https://siwoo-jung.github.io/posts/how-to-contribute-to-open-source-projects), I shared my experience contributing to Microsoft's open source project, Presidio. For those not familiar with creating a Pull Request (PR), this post will provide a step-by-step guide on how to create a PR on GitHub.
+In my previous [post](https://siwoo-blog.pages.dev/posts/how-to-contribute-to-open-source-projects/), I shared my experience contributing to Microsoft's open source project, Presidio. For those not familiar with creating a Pull Request (PR), this post will provide a step-by-step guide on how to create a PR on GitHub.
 
 A Pull Request (PR) is a way to propose changes to a codebase. It's called a "pull" request because you're asking the project maintainers to "pull" your changes into their repository. PRs are fundamental to collaborative development and are the standard way to contribute to open source projects.
 
