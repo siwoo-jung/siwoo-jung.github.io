@@ -1,5 +1,5 @@
 ---
-title: Georgia Tech OMSCS Admission As A Non-CS Graduate Without Industry Experience
+title: Georgia Tech OMSCS Admission Without CS Background
 description: What is OMSCS, why I chose OMSCS and what you need for OMSCS.
 date: 2025-07-29 01:22:00 +1000
 categories:
