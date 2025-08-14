@@ -52,7 +52,7 @@ Unlike the Computer Network course I took for the second course, GIOS lectures a
 
 Prior to exams, sample questions were provided and some of the actual exam questions were similar to those sample questions. However, the exams were definitely not easy overall and some questions were quite niche. Still, the exams are doable as long as you try to understand the contents and not procrastinate.
 
-## Assignments
+## Projects (45%)
 
 ---
 
